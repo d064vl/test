@@ -1,0 +1,25 @@
+# Add Extenxion -» REST Client VS Code
+
+@host = 127.0.0.1:8000
+
+########
+# Post
+########
+
+# Create Post ID
+POST http://{{host}}/product
+
+{
+    "id": 122,
+    "name": "name",
+    "description": "description",
+    "category": "category",
+    "pricing": {
+        "amount": 1,
+        "currency": "BR"
+    },
+    "availability": {
+        "quantity": 1,
+        "timestamp": "2024-06-12T12:00:00Z"
+    }
+}
