@@ -37,4 +37,7 @@ async def create_product(
 
     except Exception as e:
         logger.error(f"Exception {e}")
-        raise e
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"There was an error",
+        )
