@@ -13,7 +13,8 @@ class ProductTable(Base):
 
     __tablename__ = "products"
 
-    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    idu: Mapped[int] = mapped_column(Integer, primary_key=True)
+    id: Mapped[int] = mapped_column(Integer)
     name: Mapped[str] = mapped_column(String(255))
     description: Mapped[str] = mapped_column(String(120))
     amount: Mapped[int] = mapped_column(Integer)
